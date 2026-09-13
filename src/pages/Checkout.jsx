@@ -94,10 +94,12 @@ export default function Checkout() {
   );
 }
 
+const gradientPrimary = "linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)";
+
 const s = {
   page: {
     minHeight: "100vh",
-    background: "var(--paper)",
+    background: "radial-gradient(ellipse at top, rgba(139,92,246,0.15) 0%, var(--paper) 55%)",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -106,18 +108,18 @@ const s = {
     color: "var(--ink)",
   },
   brand: { display: "flex", alignItems: "center", gap: 10, marginBottom: 32 },
-  brandMark: { width: 34, height: 34, borderRadius: 8, background: "var(--ink)", color: "var(--gold)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 18 },
+  brandMark: { width: 36, height: 36, borderRadius: 10, background: gradientPrimary, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 18, boxShadow: "0 4px 16px rgba(139,92,246,0.45)" },
   brandName: { fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 20 },
-  card: { width: "100%", maxWidth: 420, background: "var(--paper-raised)", border: "1px solid var(--ink-15)", borderRadius: 14, padding: 32 },
-  h1: { fontSize: 22, marginBottom: 6 },
-  sub: { fontSize: 14, color: "var(--ink-45)", marginBottom: 20 },
-  priceRow: { display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 },
-  priceNum: { fontFamily: "var(--font-display)", fontSize: 36, fontWeight: 700 },
+  card: { width: "100%", maxWidth: 420, background: "var(--paper-raised)", border: "1px solid var(--ink-15)", borderRadius: 20, padding: 36, boxShadow: "0 25px 60px rgba(0,0,0,0.4)" },
+  h1: { fontSize: 24, marginBottom: 6 },
+  sub: { fontSize: 14, color: "var(--ink-45)", marginBottom: 24 },
+  priceRow: { display: "flex", alignItems: "baseline", gap: 8, marginBottom: 22 },
+  priceNum: { fontFamily: "var(--font-display)", fontSize: 38, fontWeight: 700, background: "linear-gradient(135deg, #c4b5fd 0%, #8b5cf6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" },
   priceUnit: { fontSize: 14, color: "var(--ink-45)" },
-  features: { listStyle: "none", padding: 0, margin: "0 0 24px", display: "flex", flexDirection: "column", gap: 10 },
+  features: { listStyle: "none", padding: 0, margin: "0 0 26px", display: "flex", flexDirection: "column", gap: 10 },
   featureItem: { fontSize: 14, color: "var(--ink-70)", paddingInlineStart: 18, position: "relative" },
-  error: { fontSize: 13, color: "var(--brick)", background: "rgba(181,72,45,0.08)", padding: "10px 12px", borderRadius: 8, marginBottom: 16 },
-  payBtn: { width: "100%", padding: "14px 20px", borderRadius: 8, border: "none", background: "var(--ink)", color: "var(--paper-raised)", fontSize: 15, fontWeight: 600 },
-  trustNote: { fontSize: 12, color: "var(--ink-45)", marginTop: 14, textAlign: "center" },
-  link: { color: "var(--forest)", fontWeight: 600 },
+  error: { fontSize: 13, color: "#fca5a5", background: "rgba(239,68,68,0.12)", border: "1px solid rgba(239,68,68,0.25)", padding: "10px 14px", borderRadius: 10, marginBottom: 16 },
+  payBtn: { width: "100%", padding: "15px 20px", borderRadius: 12, border: "none", background: gradientPrimary, color: "#fff", fontSize: 15, fontWeight: 600, cursor: "pointer", boxShadow: "0 10px 28px rgba(139,92,246,0.4)" },
+  trustNote: { fontSize: 12, color: "var(--ink-45)", marginTop: 16, textAlign: "center" },
+  link: { color: "var(--gold-ink)", fontWeight: 600 },
 };
