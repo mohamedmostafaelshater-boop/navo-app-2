@@ -1,17 +1,17 @@
 :root {
-  --ink: #12231d;
-  --ink-70: #33453e;
-  --ink-45: #62766e;
-  --ink-15: rgba(18, 35, 29, 0.14);
-  --ink-08: rgba(18, 35, 29, 0.07);
-  --paper: #f1f4ef;
-  --paper-raised: #fbfcfa;
-  --gold: #d9a441;
-  --gold-ink: #6b4b0f;
-  --forest: #1f6f54;
-  --brick: #b5482d;
+  --ink: #f1eefc;
+  --ink-70: #c9c3e0;
+  --ink-45: #9089ae;
+  --ink-15: rgba(241, 238, 252, 0.14);
+  --ink-08: rgba(241, 238, 252, 0.07);
+  --paper: #0f0b1e;
+  --paper-raised: #1a1530;
+  --gold: #8b5cf6;
+  --gold-ink: #c4b5fd;
+  --forest: #22c55e;
+  --brick: #ef4444;
   --font-display: "El Messiri", "Segoe UI", sans-serif;
-  --font-body: "IBM Plex Sans Arabic", "Segoe UI", sans-serif;
+  --font-body: "IBM Plex Sans Arabic", sans-serif;
 }
 
 * {
